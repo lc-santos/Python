@@ -27,5 +27,5 @@ while program == True:
 
     if repeat == "N":
         print("Ok")
-        print(" Total de carros: {}\n Total de carros até 2000: {}\n Total de carros acima de 2000: {}".format(consultas, carro2000, carro2001, valortotal))
+        print(" Total de carros: {}\n Total de carros até 2000: {}\n Total de carros acima de 2000: {}".format(consultas, carro2000, carro2001,))
         break
