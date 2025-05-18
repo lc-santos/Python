@@ -9,21 +9,48 @@ for i in range(1,10,1):
     nome = str(input("Nome: "))
     idade = int(input("Idade: "))
     sexo = str(input("Sexo [F] Feminino [M] Masculino ")).upper()
+    
+                
+    if sexo == "M" and idade >= 30:
+        
+        salario = 100
+        print(f'{nome}, Seu sálario liquido será de: R${salario}')
+        loop = str(input("Deseja consultar novamente?: [S] Sim [N] Não: ")).upper()
+        if loop == "S":
+            continue
+        if loop == "N":
+            break
+        else: print("Comando inválido")
+        continue
+    
+    if sexo == "M" and idade < 30:
+        salario = 50
+        print(f'{nome}, Seu sálario liquido será de: R${salario}')
+        loop = str(input("Deseja consultar novamente?: [S] Sim [N] Não: ")).upper()
+        if loop == "S":
+            continue
+        if loop == "N":
+            break     
+        
+    if sexo == "F" and idade >= 30:
+        salario = 200
+        print(f'{nome}, Seu sálario liquido será de: R${salario}')
+        loop = str(input("Deseja consultar novamente?: [S] Sim [N] Não: ")).upper()
+        if loop == "S":
+            continue
+        if loop == "N":
+            break
+        else: print("Comando inválido")
+    
 
-if sexo == "M" and idade >= 30:
-    salario = 100
-    print(salario)
-elif sexo == "M" and idade < 30:
-    salario = 50
-    print(salario)
-else: print("Comando inválido")
-
-if sexo == "F" and idade >= 30:
-    salario = 200
-    print(salario)
-else: print("Comando inválido")
-
-elif sexo == "F" and idade < 30:
-    salario = 80
-    print(salario)
-
+    if sexo == "F" and idade < 30:
+        salario = 80
+        print(f'{nome}, Seu sálario liquido será de: R${salario}')
+        loop = str(input("Deseja consultar novamente?: [S] Sim [N] Não: ")).upper()
+        if loop == "S":
+            continue
+        if loop == "N":
+            break
+        else: print("Comando inválido")
+    
+    
