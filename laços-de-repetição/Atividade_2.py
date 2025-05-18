@@ -9,7 +9,7 @@ while cadastro == True:
     saude = str(input("Possui problemas de saúde?: [S] [N] ")).upper()
     
     if idade >= 18 and saude == "N":
-            print("Parabéns {}! Você esta apto para cumprir o serviço militar".format(nome))
+            print("Parabéns, {}! Você esta apto para cumprir o serviço militar".format(nome))
             nova = int(input("Deseja consultar novamente? [1] Sim [2] Não: "))
             if nova == 1:
                 contador += 1

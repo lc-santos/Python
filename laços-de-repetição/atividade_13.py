@@ -3,10 +3,12 @@ valorfinal = int(input("Qual o valor final?: "))
 pares = 0
 impares = 0
 
-while valorinicial > 0:
+# Resolver resultado par
+
+while valorinicial > -1:
     if valorinicial % 2 == 0:
-        print(f'{valorinicial} é par')
         pares = pares + 1
+        print(f'{valorinicial} é par')
         valorinicial = valorinicial + 1
         print(f'{valorinicial} é impar')
         impares = impares + 1
@@ -15,12 +17,14 @@ while valorinicial > 0:
             print(f'Total de números pares {pares}')
             print(f'Total de números impares: {impares}')
             break
-    if valorinicial % 2 ==1:
-        print(f'{valorinicial} é impar')
+
+    if valorinicial % 2 == 1:
         impares = impares + 1
-        valorinicial = valorinicial + 2
+        print(f'{valorinicial} é impar')
+        valorinicial = valorinicial + 1
+        pares = pares + 1
         if valorinicial >= valorfinal:
             print(f'Total de números pares {pares}')
-            print(f'Total de números impáres: {impares}')
+            print(f'Total de números impares: {impares}')
             break
 
