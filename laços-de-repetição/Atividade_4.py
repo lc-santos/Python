@@ -10,8 +10,9 @@ while loop == True:
         print("Zero")
     if n > 0:
         print("Número positivo")
-    new = int(input("Deseja consultar novamente?: [1] Sim [2] Não"))
+    new = int(input("Deseja consultar novamente?: [1] Sim [2] Não "))
     if new == 1:
         continue
     if new == 2:
+        print("Fim do programa")
         break

@@ -12,8 +12,9 @@ valor = 0
 # Resolver valor total
 
 while program == True:
-    valor = int(input("Qual o valor do carro escolhido?: "))
+    valor = float(input("Qual o valor do carro escolhido?: "))
     ano = int(input("Qual o ano do carro?: "))
+    
     if ano <= 2000:
         carro2000 += 1
         print(f'O carro no valor de {valor} com o desconto de 12%, custará: {valor - valor * 12 / 100}')

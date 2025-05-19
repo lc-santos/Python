@@ -11,3 +11,41 @@ imprimir uma mensagem.
 	  65 A 70		7			8			9
 '''
 
+program = True 
+
+while program == True:
+    idade = int(input("Qual sua idade?: "))
+    ocupacao = int(input("Qual sua ocupação?: [1] Baixo [2] Médio [3] Alto: "))
+    
+    if idade < 17:
+        print("Idade abaixo do necessário")
+        continue
+
+    if idade >= 17 or idade <= 20:
+        if ocupacao == 1:
+            print("Aprovado")
+        if ocupacao == 2:
+            print("Meio Aprovado")
+        if ocupacao == 3:
+            print("Negado")
+    else: print("Comando inválido")
+   
+    if idade >= 21 or idade <= 24:
+        if ocupacao == 1:
+            print("Aprovado")
+        if ocupacao == 2:
+            print("Meio Aprovado")
+        if ocupacao == 3:
+            print("Negado")
+    else: print("Comando inválido")
+	
+	
+    if idade >= 25 or idade <= 34:
+        if ocupacao == 1:
+            print("Aprovado")
+        if ocupacao == 2:
+            print("Meio Aprovado")
+        if ocupacao == 3:
+            print("Negado")
+   
+   
