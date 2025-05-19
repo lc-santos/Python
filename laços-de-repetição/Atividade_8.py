@@ -14,7 +14,7 @@ for i in range(1,10,1):
     if sexo == "M" and idade >= 30:
         
         salario = 100
-        print(f'{nome}, Seu sálario liquido será de: R${salario}')
+        print(f'{nome}, Seu sálario líquido será de: R${salario}')
         loop = str(input("Deseja consultar novamente?: [S] Sim [N] Não: ")).upper()
         if loop == "S":
             continue
@@ -25,7 +25,7 @@ for i in range(1,10,1):
     
     if sexo == "M" and idade < 30:
         salario = 50
-        print(f'{nome}, Seu sálario liquido será de: R${salario}')
+        print(f'{nome}, Seu sálario líquido será de: R${salario}')
         loop = str(input("Deseja consultar novamente?: [S] Sim [N] Não: ")).upper()
         if loop == "S":
             continue
@@ -34,7 +34,7 @@ for i in range(1,10,1):
         
     if sexo == "F" and idade >= 30:
         salario = 200
-        print(f'{nome}, Seu sálario liquido será de: R${salario}')
+        print(f'{nome}, Seu sálario líquido será de: R${salario}')
         loop = str(input("Deseja consultar novamente?: [S] Sim [N] Não: ")).upper()
         if loop == "S":
             continue
@@ -45,7 +45,7 @@ for i in range(1,10,1):
 
     if sexo == "F" and idade < 30:
         salario = 80
-        print(f'{nome}, Seu sálario liquido será de: R${salario}')
+        print(f'{nome}, Seu sálario líquido será de: R${salario}')
         loop = str(input("Deseja consultar novamente?: [S] Sim [N] Não: ")).upper()
         if loop == "S":
             continue

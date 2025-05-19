@@ -1,0 +1,1 @@
+'''17) - Desenvolva um algoritmo que leia 10 valores e ao final exiba a quantidade de valores múltiplo de 5.'''
