@@ -7,12 +7,12 @@ par = 0
 impar = 0
 loop = valorfinal
 
-while valorfinal > 0:
-    if valorinicial % 2 == 0:
-        print(f"{valorfinal} impar")
-        valorifinal = valorfinal - 1
-        print(f"{valorfinal} par")   
-    else:
-        print(f"{valorfinal} par")
-        valorfinal = valorfinal - 1
-        print(f"{valorfinal} impar")
+for i in range (valorinicial,valorfinal + 1,1):
+    if i % 2 == 0:
+        print(f'{i} é par')
+        par = par + 1
+        print(f'total de par {par}')
+    if i % 2 != 0:
+        print(f'{i} é impar')
+        impar = impar + 1
+        print(f'total de impar {impar}')

@@ -11,41 +11,72 @@ imprimir uma mensagem.
 	  65 A 70		7			8			9
 '''
 
-program = True 
+program = True
+cliente = 0
 
 while program == True:
-    idade = int(input("Qual sua idade?: "))
-    ocupacao = int(input("Qual sua ocupação?: [1] Baixo [2] Médio [3] Alto: "))
+	nome = str(input("Seu nome: "))
+	idade = int(input("Sua idade: "))
+ 
+	if idade >= 17 or idade <= 70:
+         if idade <= 20:
+            risco = str(input("Seu grupo de risco: [B] Baixo [M] Médio [A] Alto: ")).upper()
+            if risco == "B":
+             cliente = 1
+             print(f"{nome}, sua apólice foi aprovada!, categoria {cliente}")
+            if risco == "M":
+             cliente = 2
+             print(f"{nome}, sua apólice esta em analise!, categoria {cliente} [Saiba mais]")
+            if risco == "A":
+             cliente = 3
+             print(f"{nome}, sua apólice foi negada!, categoria {cliente}")
+         
+         if idade >= 21 and idade <= 24:
+            risco = str(input("Seu grupo de risco: [B] Baixo [M] Médio [A] Alto: ")).upper()
+            if risco == "B":
+             cliente = 2
+             print(f"{nome}, sua apólice foi aprovada!, categoria {cliente}")
+            if risco == "M":
+             cliente = 3
+             print(f"{nome}, sua apólice esta em analise!, categoria {cliente} [Saiba mais]")
+            if risco == "A":
+             cliente = 4
+             print(f"{nome}, sua apólice foi negada!, categoria {cliente}")
+        
+         if idade >= 25 and idade <= 34:
+            risco = str(input("Seu grupo de risco: [B] Baixo [M] Médio [A] Alto: ")).upper()
+            if risco == "B":
+             cliente = 3
+             print(f"{nome}, sua apólice foi aprovada!, categoria {cliente}")
+            if risco == "M":
+             cliente = 4
+             print(f"{nome}, sua apólice esta em analise!, categoria {cliente} [Saiba mais]")
+            if risco == "A":
+             cliente = 5
+             print(f"{nome}, sua apólice foi negada!, categoria {cliente}")
+             
+         if idade >= 34 and idade <= 64:
+            risco = str(input("Seu grupo de risco: [B] Baixo [M] Médio [A] Alto: ")).upper()
+            if risco == "B":
+             cliente = 4
+             print(f"{nome}, sua apólice foi aprovada!, categoria {cliente}")
+            if risco == "M":
+             cliente = 5
+             print(f"{nome}, sua apólice esta em analise!, categoria {cliente} [Saiba mais]")
+            if risco == "A":
+             cliente = 6
+             print(f"{nome}, sua apólice foi negada!, categoria {cliente}")
+        
+         if idade >= 65 and idade <= 70:
+            risco = str(input("Seu grupo de risco: [B] Baixo [M] Médio [A] Alto: ")).upper()
+            if risco == "B":
+             cliente = 7
+             print(f"{nome}, sua apólice foi aprovada!, categoria {cliente}")
+            if risco == "M":
+             cliente = 8
+             print(f"{nome}, sua apólice esta em analise!, categoria {cliente} [Saiba mais]")
+            if risco == "A":
+             cliente = 9
+             print(f"{nome}, sua apólice foi negada!, categoria {cliente}")
     
-    if idade < 17:
-        print("Idade abaixo do necessário")
-        continue
-
-    if idade >= 17 or idade <= 20:
-        if ocupacao == 1:
-            print("Aprovado")
-        if ocupacao == 2:
-            print("Meio Aprovado")
-        if ocupacao == 3:
-            print("Negado")
-    else: print("Comando inválido")
-   
-    if idade >= 21 or idade <= 24:
-        if ocupacao == 1:
-            print("Aprovado")
-        if ocupacao == 2:
-            print("Meio Aprovado")
-        if ocupacao == 3:
-            print("Negado")
-    else: print("Comando inválido")
-	
-	
-    if idade >= 25 or idade <= 34:
-        if ocupacao == 1:
-            print("Aprovado")
-        if ocupacao == 2:
-            print("Meio Aprovado")
-        if ocupacao == 3:
-            print("Negado")
-   
-   
+       

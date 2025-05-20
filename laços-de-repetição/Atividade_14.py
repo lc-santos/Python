@@ -7,7 +7,7 @@ for i in range(5):
 
     a = float(input("Valor a: "))
     b = float(input("Valor b:"))
-    c = str(input("Simbolo da operação: "))
+    c = str(input("simbolo da operação: "))
 
     if c == "-":
         print(a - b)
@@ -20,5 +20,6 @@ for i in range(5):
 
     if c == "/":
         print(a / b)
-    else:
-        print("Operador não definido")
+        if c != "-" or "+" or "/" or "*":
+            print("Comando inválido")
+            continue
